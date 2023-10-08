@@ -1,0 +1,197 @@
+html {
+    height: 100%;
+  }
+  
+  body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff;
+      overflow:visible;
+      overflow-x: hidden;
+      height: 100%;
+      
+  }
+  
+  
+  
+  .navbar-brand {
+      font-size: 30px;
+      font-weight: bold;
+  }
+  
+  .navbar-nav .nav-link {
+      font-size: 17px;
+      margin-right: 10px;
+  }
+  
+  .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      height: 300px;
+    }
+    .swiper-slide img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+    .swiper-pagination {
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      z-index: 10;
+    }
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      margin: 0 5px;
+      background-color: #fff;
+      border-radius: 50%;
+    }
+    .swiper-pagination-bullet-active {
+      background-color: #000000;
+    }
+  
+    .login-btn,.btn-primary {
+      background-color: #ffffff;
+      color: #000000;
+      border: 2px solid #000000;
+      padding: 5px 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px 2px rgba(255,255,255,0.5);
+      transition: all 0.3s ease;
+    }
+    
+    .login-btn:hover,.btn-primary:hover {
+      background-color: #ffffff;
+      color: #000000;
+      box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+      border-color: #000000;
+      transform: translateY(-2px);
+    }
+  
+    .btns {
+      background-color: transparent;
+      color: #000000;
+      border: none;
+      padding: 8px 20px;
+      font-size: 18px;
+      transition: all 0.3s ease;
+    }
+    
+    .btns:hover {
+      color: #000000;
+      text-shadow: 0 0 15px rgba(0, 0, 0, 1);
+      transform: translateY(-2px);
+    }
+  
+    #login-form, #register-form, #contact-form {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 9999;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+    }
+  
+    #close-login-form {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 10px;
+      font-size: 25px;
+      color: #aaa;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    
+    #close-login-form:hover {
+      color: #000000;
+    }
+  
+    #close-register-form {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 10px;
+      font-size: 25px;
+      color: #aaa;
+      background: none;
+      border: none;
+      cursor: pointer;
+  }
+  
+  #close-register-form:hover {
+      color: #000000;
+  }
+  
+    .form-control:focus {
+      box-shadow: none;
+      border-color: #000000;
+  }
+  
+  #login-form label, #login-form input,#register-form label, #register-form input, #contact-form label, #contact-form input {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  #login-form label:focus-within, #login-form input:focus,#register-form label:focus-within,#register-form input:focus,#contact-form label:focus-within, #contact-form input:focus {
+    transform: translateY(-3px);
+  }
+  
+  #login-form label:focus-within, #login-form input:hover,#register-form label:focus-within, #register-form input:hover,#contact-form label:focus-within, #contact-form input:hover{
+    transform: translateY(-4px);
+  }
+  
+  .alert-danger {
+      margin-top: 10px;
+  }
+  
+  #contact-form {
+    width: 30%;
+    margin: 0 auto; /* Center the form horizontally */
+  }
+
+  
+a.privacy-policy,
+a.terms-conditions {
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a.privacy-policy:hover,
+a.terms-conditions:hover {
+  text-decoration: underline;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
+.container {
+  max-width: 500px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.location {
+  position: relative;
+  height: calc(100vh - 100px); /* Adjust the height as needed, subtracting the height of the footer */
+  /* Other styling properties */
+  text-align: center;
+}
+
+/* Set the position and height of the map container */

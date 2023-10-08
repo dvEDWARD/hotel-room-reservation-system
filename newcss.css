@@ -1,0 +1,275 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+	background-color: #fff;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+
+
+.navbar-brand {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+	font-size: 17px;
+	margin-right: 10px;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  height: 300px;
+}
+.swiper-slide img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.swiper-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+}
+.swiper-pagination-bullet {
+  display: none;
+}
+
+
+
+  .login-btn,.btn-primary,#apply {
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #000000;
+    padding: 5px 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(255,255,255,0.5);
+    transition: all 0.3s ease;
+  }
+  
+  .login-btn:hover,.btn-primary:hover,#apply:hover {
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+    border-color: #000000;
+    transform: translateY(-2px);
+  }
+
+  .btns {
+    background-color: transparent;
+    color: #000000;
+    border: none;
+    padding: 8px 20px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+  }
+  
+  .btns:hover {
+    color: #000000;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 1);
+    transform: translateY(-2px);
+  }
+
+  #login-form, #register-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+  }
+
+  #close-login-form {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    font-size: 25px;
+    color: #aaa;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #close-login-form:hover {
+    color: #000000;
+  }
+
+  #close-register-form {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    font-size: 25px;
+    color: #aaa;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#close-register-form:hover {
+    color: #000000;
+}
+
+  .form-control:focus {
+    box-shadow: none;
+    border-color: #000000;
+}
+
+#login-form label, #login-form input,#register-form label, #register-form input {
+  transition: transform 0.2s ease-in-out;
+}
+
+#login-form label:focus-within, #login-form input:focus,#register-form label:focus-within,#register-form input:focus {
+  transform: translateY(-3px);
+}
+
+#login-form label:focus-within, #login-form input:hover,#register-form label:focus-within, #register-form input:hover{
+  transform: translateY(-4px);
+}
+
+.alert-danger {
+    margin-top: 10px;
+}
+
+#tourist-attractions {
+  background-color: #fff;
+  padding: 80px 0;
+}
+
+.section-title {
+  margin-bottom: 50px;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 30px;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(-10px);
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+a.privacy-policy,
+a.terms-conditions {
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a.privacy-policy:hover,
+a.terms-conditions:hover {
+  text-decoration: underline;
+}
+
+.dropdown-menu {
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s, transform 0.3s ease;
+}
+
+.dropdown-menu.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: opacity 0.3s ease, visibility 0s linear 0s, transform 0.3s ease;
+}
+.hotels {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  margin-left: 0;
+}
+.container .sidebar {
+  width: 575px; /* Set a fixed width for the sidebar */
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 5px;
+  margin-right: 0%;
+}
+
+.sidebar h4 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.sidebar label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.sidebar input[type="number"],
+.sidebar select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.sidebar label.checkbox {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.hotels {
+  flex-grow: 1; /* Allow hotels section to grow and fill the remaining space */
+  /* Hotels styles */
+}
+
+.facilities {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1 1 50%;
+}
+
+
